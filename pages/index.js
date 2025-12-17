@@ -333,8 +333,8 @@ function ToolsSection() {
             Share your requirements and our team will respond with a tailored rate structure for your
             business.
           </p>
-          <a href="#quote" className="btn-link">
-            Request a quote →
+          <a href="/get-a-quote" className="btn-link">
+            Open quick quote →
           </a>
         </article>
 
@@ -366,9 +366,26 @@ function ToolsSection() {
           <h3>Online Customers</h3>
           <p>
             Business customers can access statements, PODs and shipment history via our secure online
-            portal.
+            portals.
           </p>
-          <span className="pill pill-outline small">Portal access for account customers</span>
+          <div className="nav-cta" style={{ marginTop: '0.5rem' }}>
+            <a
+              href="https://firstfreight.pperfect.com"
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-ghost btn-sm"
+            >
+              Customer Login
+            </a>
+            <a
+              href="https://ffweb30201.pperfect.com/pponline/"
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-ghost btn-sm"
+            >
+              PP Online
+            </a>
+          </div>
         </article>
 
         <article className="card tool-card">
@@ -381,7 +398,14 @@ function ToolsSection() {
           </div>
           <h3>Agent Portal</h3>
           <p>Tools and visibility for our agent network across South Africa and neighbouring countries.</p>
-          <span className="pill pill-outline small">For approved agents</span>
+          <a
+            href="https://ffagentportal.pperfect.com"
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-ghost btn-sm"
+          >
+            Open Agent Portal
+          </a>
         </article>
 
         <article className="card tool-card">
@@ -393,9 +417,9 @@ function ToolsSection() {
           </div>
           <h3>Volume Calculator</h3>
           <p>Quickly estimate volumetric and chargeable weight for your shipments before booking.</p>
-          <button className="btn btn-ghost btn-sm" type="button" disabled>
-            Coming soon
-          </button>
+          <a href="/volume-calculator" className="btn btn-ghost btn-sm">
+            Open calculator
+          </a>
         </article>
 
         <article className="card tool-card highlight">
