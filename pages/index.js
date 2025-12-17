@@ -184,6 +184,14 @@ function ServicesSection() {
 
       <div className="container card-grid">
         <article className="card service-card">
+          <div className="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="9" width="10" height="6" rx="1.2" />
+              <rect x="14" y="11" width="5" height="4" rx="1" />
+              <circle cx="8" cy="16.5" r="1.7" fill="currentColor" />
+              <circle cx="17" cy="16.5" r="1.7" fill="currentColor" />
+            </svg>
+          </div>
           <h3>Road Freight</h3>
           <p>
             Dedicated or break‑bulk truckloads from Cape Town, Durban and Johannesburg to all major and
@@ -197,6 +205,11 @@ function ServicesSection() {
         </article>
 
         <article className="card service-card">
+          <div className="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 14.5 11.5 12 7.5 4.5l2-.7 4.3 6.6L21 9.8l0.7 2-5.4 2.1 1.7 4.7-1.9 0.6-3.2-5.4L8 15.5 3 14.5Z" />
+            </svg>
+          </div>
           <h3>Air Freight</h3>
           <p>
             When time is critical, we move your cargo on the first available flight with proactive updates
@@ -210,6 +223,13 @@ function ServicesSection() {
         </article>
 
         <article className="card service-card">
+          <div className="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="5" y="8" width="14" height="9" rx="1.2" />
+              <path d="M5 10.5h14" />
+              <path d="M9 5.5 12 4l3 1.5" />
+            </svg>
+          </div>
           <h3>Warehousing</h3>
           <p>
             Flexible storage and handling solutions integrated with our distribution network to streamline
@@ -223,6 +243,13 @@ function ServicesSection() {
         </article>
 
         <article className="card service-card">
+          <div className="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="8" cy="9" r="2.5" />
+              <circle cx="16" cy="15" r="2.5" />
+              <path d="M10.2 10.2 13.8 13.8" />
+            </svg>
+          </div>
           <h3>Cross‑Border</h3>
           <p>
             Overland services to BLNS and neighbouring countries, from single pallets to full loads with
@@ -236,6 +263,13 @@ function ServicesSection() {
         </article>
 
         <article className="card service-card">
+          <div className="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="6" y="8" width="12" height="8" rx="1.4" />
+              <path d="M12 9.5v5" />
+              <path d="M9.5 12h5" />
+            </svg>
+          </div>
           <h3>Medical Logistics</h3>
           <p>
             High‑precision distribution between laboratories, hospitals, clinics and healthcare facilities,
@@ -249,6 +283,13 @@ function ServicesSection() {
         </article>
 
         <article className="card service-card">
+          <div className="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="4" y="7" width="16" height="9" rx="1.2" />
+              <path d="M8 10h8" />
+              <path d="M8 13h4" />
+            </svg>
+          </div>
           <h3>In‑house Freight Management</h3>
           <p>
             A complete software and onsite operator package to manage your warehouse and distribution
@@ -280,6 +321,13 @@ function ToolsSection() {
 
       <div className="container card-grid tools-grid">
         <article className="card tool-card">
+          <div className="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="5" y="5" width="14" height="14" rx="1.5" />
+              <path d="M8 10h8" />
+              <path d="M8 13h5" />
+            </svg>
+          </div>
           <h3>Get a Quote</h3>
           <p>
             Share your requirements and our team will respond with a tailored rate structure for your
@@ -291,6 +339,12 @@ function ToolsSection() {
         </article>
 
         <article className="card tool-card">
+          <div className="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="10" r="3" />
+              <path d="M12 13c-2.5 0-4.5 1.6-5 3.8L7.2 18h9.6l0.2-1.2C16.5 14.6 14.5 13 12 13Z" />
+            </svg>
+          </div>
           <h3>Track Parcel</h3>
           <p>
             Use your waybill number to view the latest scan events and delivery status of your shipment.
@@ -301,6 +355,14 @@ function ToolsSection() {
         </article>
 
         <article className="card tool-card">
+          <div className="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="9" cy="10" r="2.2" />
+              <circle cx="15" cy="10" r="2.2" />
+              <path d="M5.5 16c.4-1.7 1.8-3 3.5-3s3.1 1.3 3.5 3" />
+              <path d="M11.5 16c.4-1.7 1.8-3 3.5-3s3.1 1.3 3.5 3" />
+            </svg>
+          </div>
           <h3>Online Customers</h3>
           <p>
             Business customers can access statements, PODs and shipment history via our secure online
@@ -310,12 +372,25 @@ function ToolsSection() {
         </article>
 
         <article className="card tool-card">
+          <div className="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="4" y="7" width="6" height="10" rx="1.2" />
+              <rect x="10" y="7" width="6" height="10" rx="1.2" />
+              <rect x="16" y="7" width="4" height="10" rx="1.2" />
+            </svg>
+          </div>
           <h3>Agent Portal</h3>
           <p>Tools and visibility for our agent network across South Africa and neighbouring countries.</p>
           <span className="pill pill-outline small">For approved agents</span>
         </article>
 
         <article className="card tool-card">
+          <div className="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="6" y="6" width="12" height="12" rx="1.4" />
+              <path d="M9 15 15 9" />
+            </svg>
+          </div>
           <h3>Volume Calculator</h3>
           <p>Quickly estimate volumetric and chargeable weight for your shipments before booking.</p>
           <button className="btn btn-ghost btn-sm" type="button" disabled>
@@ -324,6 +399,14 @@ function ToolsSection() {
         </article>
 
         <article className="card tool-card highlight">
+          <div className="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="4" y="7" width="16" height="10" rx="1.6" />
+              <path d="M4 11h16" />
+              <circle cx="9" cy="14" r="1.2" fill="currentColor" />
+              <circle cx="15" cy="14" r="1.2" fill="currentColor" />
+            </svg>
+          </div>
           <h3>30‑Day Account</h3>
           <p>
             Apply for a 30‑day account and simplify billing with consolidated invoices and agreed rates.

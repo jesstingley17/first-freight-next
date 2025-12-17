@@ -514,6 +514,27 @@ body {
   gap: 1.5rem;
 }
 
+.card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: radial-gradient(circle at top, var(--accent-muted), var(--accent));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.7rem;
+  color: #000000;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.85);
+}
+
+.card-icon svg {
+  width: 22px;
+  height: 22px;
+  stroke: #000000;
+  stroke-width: 1.6;
+  fill: none;
+}
+
 .service-card h3 {
   margin: 0 0 0.4rem;
   font-size: 1.1rem;
