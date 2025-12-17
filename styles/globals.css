@@ -363,6 +363,29 @@ body {
   align-items: stretch;
 }
 
+.hero-globe {
+  position: absolute;
+  right: max(6%, 60px);
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  mix-blend-mode: screen;
+  z-index: 0;
+}
+
+.hero-globe-inner {
+  width: min(340px, 42vw);
+  opacity: 0.2;
+  filter: drop-shadow(0 32px 80px rgba(0, 0, 0, 1));
+  animation: spinGlobe 40s linear infinite;
+}
+
+.hero-globe-inner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .hero-content h1 {
   margin: 1.4rem 0 0.8rem;
   font-size: clamp(2.4rem, 3.4vw, 3rem);
@@ -796,6 +819,15 @@ select {
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes spinGlobe {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 

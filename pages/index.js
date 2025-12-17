@@ -81,6 +81,11 @@ function Hero({ onOpenQuote, onSubmitTrack }) {
   return (
     <section className="hero" id="home">
       <div className="hero-bg" />
+      <div className="hero-globe" aria-hidden="true">
+        <div className="hero-globe-inner">
+          <img src="/globe.png" alt="" />
+        </div>
+      </div>
       <div className="container hero-inner">
         <div className="hero-content">
           <div className="hero-pill-row">
