@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 
 function Header({ isNavOpen, onToggleNav }) {
   return (
@@ -159,7 +159,7 @@ function Hero({ onOpenQuote, onSubmitTrack }) {
 
 function ServicesSection() {
   return (
-    <section id="services" className="section">
+    <section id="services" className="section animate-section">
       <div className="container section-header">
         <div>
           <h2>Courier &amp; freight services</h2>
@@ -262,7 +262,7 @@ function ServicesSection() {
 
 function ToolsSection() {
   return (
-    <section id="tools" className="section section-alt">
+    <section id="tools" className="section section-alt animate-section">
       <div className="container section-header">
         <div>
           <h2>Online tools that work with you</h2>
@@ -334,7 +334,7 @@ function ToolsSection() {
 
 function SectorsSection() {
   return (
-    <section id="sectors" className="section">
+    <section id="sectors" className="section animate-section">
       <div className="container section-header">
         <div>
           <h2>Trusted by leading South African retailers &amp; brands</h2>
@@ -360,7 +360,7 @@ function SectorsSection() {
 
 function TestimonialsSection() {
   return (
-    <section id="testimonials" className="section section-alt">
+    <section id="testimonials" className="section section-alt animate-section">
       <div className="container section-header">
         <div>
           <h2>What our customers say</h2>
@@ -404,7 +404,7 @@ function TestimonialsSection() {
 
 function BranchesSection() {
   return (
-    <section id="branches" className="section">
+    <section id="branches" className="section animate-section">
       <div className="container section-header">
         <div>
           <h2>Talk to a branch that understands your region</h2>
@@ -682,6 +682,47 @@ export default function HomePage() {
     );
   }, []);
 
+  useEffect(() => {
+    const sections = document.querySelectorAll('.animate-section');
+    if (!sections.length) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const btn = document.querySelector('.scroll-top');
+      if (!btn) return;
+      if (window.scrollY > 320) {
+        btn.style.opacity = '1';
+        btn.style.pointerEvents = 'auto';
+        btn.style.transform = 'translateY(0)';
+      } else {
+        btn.style.opacity = '0';
+        btn.style.pointerEvents = 'none';
+        btn.style.transform = 'translateY(12px)';
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <>
       <Header isNavOpen={isNavOpen} onToggleNav={handleToggleNav} />
@@ -694,6 +735,17 @@ export default function HomePage() {
         <BranchesSection />
         <QuoteSection onSubmit={handleQuoteSubmit} />
       </main>
+      <button
+        type="button"
+        className="scroll-top"
+        aria-label="Scroll back to top"
+        onClick={() => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }}
+      >
+        <span>↑</span>
+        <span>Top</span>
+      </button>
       <Footer />
     </>
   );
