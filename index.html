@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Freight | Regional & Cross-Border Logistics</title>
+    <meta
+      name="description"
+      content="First Freight provides reliable courier, warehousing and cross-border freight solutions across Southern Africa from Cape Town, Durban and Johannesburg."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+      <div class="container top-bar-inner">
+        <div class="top-bar-left">
+          <span class="pill pill-outline">Branches: Cape Town · Durban · Johannesburg</span>
+        </div>
+        <div class="top-bar-right">
+          <a href="tel:+27210360333">021 036 0333</a>
+          <span class="divider"></span>
+          <a href="tel:+27315691451">031 569 1451</a>
+          <span class="divider"></span>
+          <a href="tel:+27113877000">011 387 7000</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Site Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#home" class="logo">
+          <div class="logo-mark">FF</div>
+          <div class="logo-text">
+            <span class="logo-title">First Freight</span>
+            <span class="logo-subtitle">Regional & Cross‑Border Logistics</span>
+          </div>
+        </a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#tools">Online Tools</a></li>
+            <li><a href="#sectors">Our Customers</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#branches">Branches</a></li>
+            <li><a href="#quote">Get a Quote</a></li>
+          </ul>
+          <div class="nav-cta">
+            <a href="#track" class="btn btn-ghost">Track Parcel</a>
+            <a href="#quote" class="btn btn-primary">Get a Quote</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <div class="hero-pill-row">
+              <span class="pill pill-solid">Available to all major regional & international areas</span>
+              <span class="hero-badge">Same Day · Overnight · Economy / Road Freight</span>
+            </div>
+            <h1>Reliable courier & freight solutions across Southern Africa.</h1>
+            <p class="hero-subtitle">
+              Dedicated road and air freight, warehousing and cross‑border logistics with a personal,
+              family‑orientated service. From urgent medical deliveries to full truck loads – we get it there.
+            </p>
+            <div class="hero-actions">
+              <a href="#quote" class="btn btn-primary btn-lg">Get a Business Quote</a>
+              <a href="#track" class="btn btn-secondary btn-lg">Track My Parcel</a>
+            </div>
+            <div class="hero-meta">
+              <div>
+                <span class="meta-label">Key Hubs</span>
+                <span class="meta-value">Cape Town · Durban · Johannesburg</span>
+              </div>
+              <div>
+                <span class="meta-label">Services</span>
+                <span class="meta-value">Same Day · Overnight · Economy Road · Cross‑Border</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-panel">
+            <div class="card hero-card" id="track">
+              <h2>Track your parcel</h2>
+              <p>Enter your waybill or tracking number to see the latest status.</p>
+              <form class="stack-sm" onsubmit="return false;" aria-label="Track parcel form">
+                <label class="field">
+                  <span>Tracking Number</span>
+                  <input type="text" name="tracking-number" placeholder="e.g. FF123456789" />
+                </label>
+                <button type="submit" class="btn btn-primary btn-block">
+                  Track Parcel
+                </button>
+                <p class="helper-text">
+                  Online tracking coming soon.&nbsp;
+                  <span class="highlight">Contact your nearest branch for live assistance.</span>
+                </p>
+              </form>
+            </div>
+            <div class="card hero-card subtle">
+              <h3>Need an account?</h3>
+              <p>
+                Apply for a <strong>30‑day account</strong> and unlock preferential business rates,
+                online tools and customised reporting.
+              </p>
+              <a href="#quote" class="btn-link">Apply for an account →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section id="services" class="section">
+        <div class="container section-header">
+          <div>
+            <h2>Courier & freight services</h2>
+            <p>
+              From envelopes to full truck loads, across town or across borders – we build the right mix of
+              services to match your operation.
+            </p>
+          </div>
+          <div class="chips">
+            <span class="chip">Road Freight</span>
+            <span class="chip">Air Freight</span>
+            <span class="chip">Warehousing</span>
+            <span class="chip">Cross‑Border</span>
+            <span class="chip">Medical</span>
+          </div>
+        </div>
+
+        <div class="container card-grid">
+          <article class="card service-card">
+            <h3>Road Freight</h3>
+            <p>
+              Dedicated or break‑bulk truckloads from Cape Town, Durban and Johannesburg to all major and
+              outlying cities across South Africa and neighbouring countries.
+            </p>
+            <ul>
+              <li>Economy / road freight</li>
+              <li>Inter‑branch (IBT) transfers</li>
+              <li>Retail deliveries & reverse logistics</li>
+            </ul>
+          </article>
+
+          <article class="card service-card">
+            <h3>Air Freight</h3>
+            <p>
+              When time is critical, we move your cargo on the first available flight with proactive updates
+              from collection to delivery.
+            </p>
+            <ul>
+              <li>Same Day Express – collection within 60 minutes</li>
+              <li>Overnight Express – delivery by 10:00 the next working day</li>
+              <li>Normal Cargo – next business day delivery</li>
+            </ul>
+          </article>
+
+          <article class="card service-card">
+            <h3>Warehousing</h3>
+            <p>
+              Flexible storage and handling solutions integrated with our distribution network to streamline
+              your supply chain.
+            </p>
+            <ul>
+              <li>Short and long‑term storage</li>
+              <li>Pick, pack & dispatch</li>
+              <li>Integrated stock visibility</li>
+            </ul>
+          </article>
+
+          <article class="card service-card">
+            <h3>Cross‑Border</h3>
+            <p>
+              Overland services to BLNS and neighbouring countries, from single pallets to full loads with
+              tailored routing.
+            </p>
+            <ul>
+              <li>Planned line‑haul and dedicated trucks</li>
+              <li>Customs coordination support</li>
+              <li>Flexible solutions for big or small consignments</li>
+            </ul>
+          </article>
+
+          <article class="card service-card">
+            <h3>Medical Logistics</h3>
+            <p>
+              High‑precision distribution between laboratories, hospitals, clinics and healthcare facilities,
+              with a focus on urgency and care.
+            </p>
+            <ul>
+              <li>Time‑sensitive emergency deliveries</li>
+              <li>Dedicated handling procedures</li>
+              <li>Reliable, repeat routes for healthcare groups</li>
+            </ul>
+          </article>
+
+          <article class="card service-card">
+            <h3>In‑house Freight Management</h3>
+            <p>
+              A complete software and onsite operator package to manage your warehouse and distribution
+              operation, tailored to your volume.
+            </p>
+            <ul>
+              <li>Free software & training</li>
+              <li>On‑site operator (for qualifying clients)</li>
+              <li>Optimised routing & cost visibility</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Online Tools -->
+      <section id="tools" class="section section-alt">
+        <div class="container section-header">
+          <div>
+            <h2>Online tools that work with you</h2>
+            <p>
+              Empower your team with quick quotes, online tracking and tools that simplify day‑to‑day
+              operations.
+            </p>
+          </div>
+        </div>
+
+        <div class="container card-grid tools-grid">
+          <article class="card tool-card">
+            <h3>Get a Quote</h3>
+            <p>
+              Share your requirements and our team will respond with a tailored rate structure for your
+              business.
+            </p>
+            <a href="#quote" class="btn-link">Request a quote →</a>
+          </article>
+
+          <article class="card tool-card">
+            <h3>Track Parcel</h3>
+            <p>
+              Use your waybill number to view the latest scan events and delivery status of your shipment.
+            </p>
+            <a href="#track" class="btn-link">Track a parcel →</a>
+          </article>
+
+          <article class="card tool-card">
+            <h3>Online Customers</h3>
+            <p>
+              Business customers can access statements, PODs and shipment history via our secure online
+              portal.
+            </p>
+            <span class="pill pill-outline small">Portal access for account customers</span>
+          </article>
+
+          <article class="card tool-card">
+            <h3>Agent Portal</h3>
+            <p>
+              Tools and visibility for our agent network across South Africa and neighbouring countries.
+            </p>
+            <span class="pill pill-outline small">For approved agents</span>
+          </article>
+
+          <article class="card tool-card">
+            <h3>Volume Calculator</h3>
+            <p>
+              Quickly estimate volumetric and chargeable weight for your shipments before booking.
+            </p>
+            <button class="btn btn-ghost btn-sm" type="button" disabled>
+              Coming soon
+            </button>
+          </article>
+
+          <article class="card tool-card highlight">
+            <h3>30‑Day Account</h3>
+            <p>
+              Apply for a 30‑day account and simplify billing with consolidated invoices and agreed rates.
+            </p>
+            <a href="#quote" class="btn btn-primary btn-sm">Apply now</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Customers / Sectors -->
+      <section id="sectors" class="section">
+        <div class="container section-header">
+          <div>
+            <h2>Trusted by leading South African retailers & brands</h2>
+            <p>
+              We support national roll‑outs, store replenishment and reverse logistics for major retail groups
+              and e‑commerce brands.
+            </p>
+          </div>
+        </div>
+
+        <div class="container brands-row">
+          <span class="brand-pill">Foschini</span>
+          <span class="brand-pill">Shoprite</span>
+          <span class="brand-pill">Superbalist</span>
+          <span class="brand-pill">Pick n Pay</span>
+          <span class="brand-pill">Mr Price</span>
+          <span class="brand-pill">Jumbo</span>
+          <span class="brand-pill">Massmart</span>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section id="testimonials" class="section section-alt">
+        <div class="container section-header">
+          <div>
+            <h2>What our customers say</h2>
+            <p>
+              A personalised, family‑orientated team with the scale and expertise to move what matters most to
+              your business.
+            </p>
+          </div>
+        </div>
+
+        <div class="container card-grid testimonials-grid">
+          <article class="card testimonial-card">
+            <p class="quote">
+              “I highly recommend them as they have a personalised service and a very family‑orientated feel
+              that makes day‑to‑day dealings easy and hassle free. Their attention to detail and prompt
+              feedback enhances a smoother supply chain for us. They have out‑performed our previous logistics
+              service provider of 23 years.”
+            </p>
+            <div class="testimonial-meta">
+              <span class="name">Loriana Trisolino</span>
+              <span class="role">Operations Manager | Accessories Spares Centre</span>
+            </div>
+          </article>
+
+          <article class="card testimonial-card">
+            <p class="quote">
+              “When it comes to excellent service at competitive pricing, nobody can come close to First
+              Freight. Whether it is regarding a revision of rates or a large‑volume, last‑minute collection
+              that had to be dispatched on the day, they have always come through for us and supported us
+              immensely while we were growing.”
+            </p>
+            <div class="testimonial-meta">
+              <span class="name">Preshanthan Reddy</span>
+              <span class="role">Operations Manager | Central Medical</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Branches & Contact -->
+      <section id="branches" class="section">
+        <div class="container section-header">
+          <div>
+            <h2>Talk to a branch that understands your region</h2>
+            <p>
+              Our teams in Cape Town, Durban and Johannesburg understand the realities of local and regional
+              distribution – and are ready to help.
+            </p>
+          </div>
+        </div>
+
+        <div class="container branches-grid">
+          <article class="card branch-card">
+            <h3>Cape Town</h3>
+            <p class="branch-phone">
+              <a href="tel:+27210360333">021 036 0333</a>
+            </p>
+            <p class="branch-address">
+              57 Mobile Road, Boquinar Industrial Area, 7490
+            </p>
+            <p class="branch-email">
+              <a href="mailto:sales@firstfreightcpt.co.za">sales@firstfreightcpt.co.za</a>
+            </p>
+            <p class="branch-hours">Office Hours: 08:00 – 17:00</p>
+          </article>
+
+          <article class="card branch-card">
+            <h3>Durban</h3>
+            <p class="branch-phone">
+              <a href="tel:+27315691451">031 569 1451</a>
+            </p>
+            <p class="branch-address">
+              Unit 2, Riverside Industrial Park, 1 Jameson Drive, Avoca, Durban
+            </p>
+            <p class="branch-email">
+              <a href="mailto:sales@firstfreightkzn.co.za">sales@firstfreightkzn.co.za</a>
+            </p>
+            <p class="branch-hours">Office Hours: 08:00 – 17:00</p>
+          </article>
+
+          <article class="card branch-card">
+            <h3>Johannesburg</h3>
+            <p class="branch-phone">
+              <a href="tel:+27113877000">011 387 7000</a>
+            </p>
+            <p class="branch-address">
+              4 Struwig Street, Witfield, Boksburg, 1459
+            </p>
+            <p class="branch-email">
+              <a href="mailto:sales@firstfreight.co.za">sales@firstfreight.co.za</a>
+            </p>
+            <p class="branch-hours">Office Hours: 08:00 – 17:00</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Quote / 30-Day Account Form -->
+      <section id="quote" class="section section-alt">
+        <div class="container quote-layout">
+          <div class="quote-intro">
+            <h2>Request a quote or 30‑day account</h2>
+            <p>
+              Tell us more about your freight profile and our team will respond with a proposal tailored to
+              your volumes, destinations and service requirements.
+            </p>
+            <ul class="bullet-list">
+              <li>Preferential rates for regular shippers</li>
+              <li>Customised routing and service combinations</li>
+              <li>In‑house freight management options for larger operations</li>
+            </ul>
+          </div>
+
+          <form class="card quote-form" aria-label="Get a quote form">
+            <div class="form-grid">
+              <label class="field">
+                <span>Company Name*</span>
+                <input type="text" name="company" required />
+              </label>
+              <label class="field">
+                <span>Physical Address*</span>
+                <input type="text" name="address" required />
+              </label>
+              <label class="field">
+                <span>Email*</span>
+                <input type="email" name="email" required />
+              </label>
+              <label class="field">
+                <span>Contact Number*</span>
+                <input type="tel" name="phone" required />
+              </label>
+              <label class="field">
+                <span>Contact First Name*</span>
+                <input type="text" name="first-name" required />
+              </label>
+              <label class="field">
+                <span>Contact Last Name*</span>
+                <input type="text" name="last-name" required />
+              </label>
+            </div>
+
+            <label class="field">
+              <span>Commodity*</span>
+              <input type="text" name="commodity" required />
+            </label>
+
+            <label class="field">
+              <span>Description of typical packages*</span>
+              <textarea name="package-description" rows="3" required></textarea>
+            </label>
+
+            <div class="form-grid">
+              <label class="field">
+                <span>Frequency of shipping*</span>
+                <select name="frequency" required>
+                  <option value="">Select one</option>
+                  <option value="local">Local</option>
+                  <option value="national">National</option>
+                  <option value="international">International</option>
+                </select>
+              </label>
+              <label class="field">
+                <span>Estimated monthly spend (ZAR)*</span>
+                <input type="number" name="monthly-spend" min="0" step="100" required />
+              </label>
+            </div>
+
+            <label class="field">
+              <span>Special requirements</span>
+              <textarea name="special-requirements" rows="3" placeholder="e.g. medical, temperature control, after-hours collections"></textarea>
+            </label>
+
+            <fieldset class="field">
+              <legend>Service requirements*</legend>
+              <div class="checkbox-grid">
+                <label><input type="checkbox" name="service" value="economy-road" /> Economy Road Freight</label>
+                <label><input type="checkbox" name="service" value="air-freight" /> Air Freight</label>
+                <label><input type="checkbox" name="service" value="same-day" /> Same Day Express</label>
+                <label><input type="checkbox" name="service" value="overnight" /> Overnight Express</label>
+                <label><input type="checkbox" name="service" value="full-truck" /> Full Truck Loads</label>
+                <label><input type="checkbox" name="service" value="cross-border" /> Cross Border</label>
+                <label><input type="checkbox" name="service" value="warehousing" /> Warehousing</label>
+                <label><input type="checkbox" name="service" value="international-express" /> International Express</label>
+                <label><input type="checkbox" name="service" value="on-site" /> On‑Site / In‑House Requirements</label>
+              </div>
+            </fieldset>
+
+            <label class="field">
+              <span>Nearest branch*</span>
+              <select name="branch" required>
+                <option value="">Select a branch</option>
+                <option value="durban">Durban</option>
+                <option value="cape-town">Cape Town</option>
+                <option value="johannesburg">Johannesburg</option>
+              </select>
+            </label>
+
+            <p class="helper-text">
+              Submitting this form will send your details to our sales team, who will contact you with a quote
+              or follow‑up questions.
+            </p>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              Submit details
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <div class="logo-mark small">FF</div>
+          <div>
+            <p class="footer-title">First Freight</p>
+            <p class="footer-tagline">Courier, freight & warehousing solutions across Southern Africa.</p>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div>
+            <p class="footer-heading">Quick links</p>
+            <a href="#services">Services</a>
+            <a href="#tools">Online Tools</a>
+            <a href="#branches">Branches</a>
+            <a href="#quote">Get a Quote</a>
+          </div>
+          <div>
+            <p class="footer-heading">Compliance</p>
+            <a href="https://firstfreight.co.za" target="_blank" rel="noreferrer">Disclaimer & T's & C's</a>
+            <a href="https://sacoronavirus.co.za" target="_blank" rel="noreferrer">COVID‑19 Info</a>
+          </div>
+        </div>
+        <div class="footer-meta">
+          <p>© 2025 First Freight. All rights reserved.</p>
+          <p class="footer-small">
+            Built as an improved concept based on the current First Freight website
+            (<a href="https://firstfreight.co.za" target="_blank" rel="noreferrer">firstfreight.co.za</a>).
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+
+
