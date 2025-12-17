@@ -457,14 +457,28 @@ function SectorsSection() {
         </div>
       </div>
 
-      <div className="container brands-row">
-        <span className="brand-pill">Foschini</span>
-        <span className="brand-pill">Shoprite</span>
-        <span className="brand-pill">Superbalist</span>
-        <span className="brand-pill">Pick n Pay</span>
-        <span className="brand-pill">Mr Price</span>
-        <span className="brand-pill">Jumbo</span>
-        <span className="brand-pill">Massmart</span>
+      <div className="container brands-row logos">
+        <figure className="brand-logo">
+          <img src="/brands/Foschini.jpg" alt="Foschini logo" />
+        </figure>
+        <figure className="brand-logo">
+          <img src="/brands/shopritesa.jpg" alt="Shoprite logo" />
+        </figure>
+        <figure className="brand-logo">
+          <img src="/brands/Superbalist-1.jpg" alt="Superbalist logo" />
+        </figure>
+        <figure className="brand-logo">
+          <img src="/brands/Pick-N-Pay.jpg" alt="Pick n Pay logo" />
+        </figure>
+        <figure className="brand-logo">
+          <img src="/brands/Mr-Price.jpg" alt="Mr Price logo" />
+        </figure>
+        <figure className="brand-logo">
+          <img src="/brands/Jumbo.jpg" alt="Jumbo logo" />
+        </figure>
+        <figure className="brand-logo">
+          <img src="/brands/Massmart-1.jpg" alt="Massmart logo" />
+        </figure>
       </div>
     </section>
   );
