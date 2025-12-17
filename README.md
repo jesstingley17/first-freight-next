@@ -32,6 +32,16 @@ Then open `http://localhost:3000` in your browser.
 
 ## Deploying
 
-The repo is ready to be pushed to GitHub and deployed with a typical Next.js host (for example, Vercel or a Node server). If you’d like to use GitHub Pages specifically, the app can be configured for static export in a follow-up step.
+### Vercel
+
+When imported into Vercel as a static site:
+
+- **Build Command**: `npm run deploy`
+- **Output Directory**: `out`
+
+### GitHub Pages
+
+You can also use the included GitHub Actions workflow in `.github/workflows/deploy.yml`, which runs `npm run deploy` and publishes the static output in `out/` to GitHub Pages.
+
 
 
